@@ -11,59 +11,109 @@ font-size: 15px;
 padding: 13px 13px; color: black
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<script type="text/javascript">
-var i = 0;
-var titulo = ["Israel Travel Guide","","Letters"];
-var texto = ["Israel has always been a standout destination. From the days of prophets to the modern day nomad this tiny slice of land on the eastern Mediteranean has long attracted visitors. While some arrive in the ‘Holy Land’ on a spiritual quest, many others are on cultural tours, beach holidays and eco-tourism trips. Weeding through Israel’s convoluted history is both exhilarating and exhausting. There are crumbling temples, ruined cities, abandoned forts and hundreds of places associated with the Bible. And while a sense of adventure is required, most sites are safe and easily accessible. Most of all, Israel is about its incredibly diverse population. Jews come from all over the world to live here, while about 20% of the population is Muslim. Politics are hard to get away from in Israel as everyone has an opinion on how to move the country forward — with a ready ear you’re sure to hear opinions from every side of the political spectrum.","One of the things that made an incredible impression on me in the film was Frida's comfort in and celebration of her own unique beauty. She didn't try to fit into conventional ideas or images about womanhood or what makes someone or something beautiful. Instead, she fully inhabited her own unique gifts, not particularly caring what other people thought. She was magnetic and beautiful in her own right. She painted for years, not to be a commercial success or to be discovered, but to express her own inner pain, joy, family, love and culture. She absolutely and resolutely was who she was. The trueness of her own unique vision and her ability to stand firmly in  her own truth was what made her successful in the end","Children and Guns<br>Published: May 7, 2013<br>To the Editor: Re “Girl’s Death by Gunshot Is Rejected as Symbol” (news article, May 6):<br> I find it abhorrent that the people of Burkesville. Ky.. are not willing to learn a lesson from the tragic shooting of a 2-year-old girl by her 5-year-old brother. I am not judging their lifestyle of introducing guns to children at a young age, but I do feel that it’s irresponsible not to practice basic safety with anything potentially lethal - guns, knives, fire and so on. How can anyone justify leaving guns lying around, unlocked and possibly loaded, in a home with two young children? I wissh the family of the victim comfort during this difficult time, but to dismiss this as a simple accident leaves open the potential for many more such “accidents” to occur. I hope this doesn’t have to happen several more times for legislators to realize that something needs to be changed. <br>EMILY LOUBATON<br>Brooklyn, May 6, 2013"];
-var fonte = ['Disponível em: www.worldtravelguide.net. Acesso em: 15 jun. 2012','HUTZLER, L. Disponível em: www.etbscreenwriting.com. Acesso em: 6 maio 2013.','Disponível em: www.nytimes.com. Acesso em: 10 maio 2013'];
-var outrotexto = ['','',''];
-var outrafonte = ['','',''];
-var enunciado = ['Antes de viajar, turistas geralmente buscam informações sobre o local para onde pretendem ir. O trecho do guia de viagens de Israel','A autora desse comentário sobre o filme Frida mostra-se impressionada com o fato de a pintora','No que diz respeito à tragédia ocorrida em Burkesville, a autora da carta enviada ao The New York Times busca'];
-var letraA = ['descreve a história desse local para que turistas valorizem seus costumes milenares.','ter uma aparência exótica.','reconhecer o acidente noticiado como um fato isolado.'];
-var letraB = ['informa hábitos religiosos para auxiliar turistas a entenderem as diferenças culturais','vender bem a sua imagem.','responsabilizar o irmão da vítima pelo incidente ocorrido.'];
-var letraC = ['divulga os principais pontos turísticos para ajudar turistas a planejarem sua viagem.','ter grande poder de sedução','apresentar versão diferente da notícia publicada pelo jornal.'];
-var letraD = ['recomenda medidas de segurança para alertar turistas sobre possíveis riscos locais','assumir sua beleza singular','expor sua indignação com a negligência de portadores de armas.'];
-var letraE = ['apresenta aspectos gerais da cultura do país para continuar a atrair turistas estrangeiros','recriar-se por meio da pintura','reforçar a necessidade de proibição do uso de armas por crianças.'];
-
+<script type="text/javascript" src="./index.js">
 </script>
 
 <body>
-    <p style="text-align: left">Questão <script>document.write(i+1);</script></p>
-    <div style='text-align: center'><script>document.write(titulo);</script></div>
-    <div><script>document.write(texto[i]);</script></div>
-    <div style='font-size: 14px; text-align: right'><script>document.write(fonte[i]);</script></div>
-    <div><script>document.write(outrotexto[i]);</script></div>
-    <div style='font-size: 14px; text-align: right'><script>document.write(outrafonte[i]);</script></div>
-    <div><script>document.write(enunciado[i])</script></div>
+  <div id ="q0" style="background-color:white">
+    <p style="text-align: left">Questão <script>document.write(1);</script></p>
+    <div style='text-align: center'><script>document.write(titulo[0]);</script></div>
+    <div><script>document.write(texto[0]);</script></div>
+    <div style='font-size: 14px; text-align: right'><script>document.write(fonte[0]);</script></div>
+    <div><script>document.write(outrotexto[0]);</script></div>
+    <div style='font-size: 14px; text-align: right'><script>document.write(outrafonte[0]);</script></div>
+    <div><script>document.write(enunciado[0])</script></div>
     <table>
      <tr>
-     <td> <input type="button" onclick="letraA()" value="A" id="altA"></td>
-     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraA[i])</script></span></td>
+     <td> <input type="button" onclick="letraA0()" value="A" id="altA0"></td>
+     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraA[0])</script></span></td>
      </tr>
      <tr>
-     <td> <input type="button" onclick="letraB()" value="B" id="altB"></td>
-     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraB[i])</script></span></td>
+     <td> <input type="button" onclick="letraB0()" value="B" id="altB0"></td>
+     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraB[0])</script></span></td>
      </tr>
      <tr>
-     <td><input type="button" onclick="letraC()" value="C" id="altC"></td>
-     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraC[i])</script></span></td>
+     <td><input type="button" onclick="letraC0()" value="C" id="altC0"></td>
+     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraC[0])</script></span></td>
     </tr>
     <tr>
-    <td><input type="button" onclick="letraD()" value="D" id="altD"></td>
-    <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraD[i])</script></span></td>
+    <td><input type="button" onclick="letraD0()" value="D" id="altD0"></td>
+    <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraD[0])</script></span></td>
     </tr>
     <tr>
-    <td><input type="button" onclick="letraE()" value="E" id="altE"></td>
-    <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraE[i])</script></span></td>
+    <td><input type="button" onclick="letraE0()" value="E" id="altE0"></td>
+    <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraE[0])</script></span></td>
     </tr>
     </table>
-    <button onclick="proxima()">Click me</button>
-    <script>function letraA(){document.getElementById('altA').style.backgroundColor= 'Blue';document.getElementById('altB').style.backgroundColor='White';document.getElementById('altC').style.backgroundColor='White';document.getElementById('altD').style.backgroundColor='White';document.getElementById('altE').style.backgroundColor='White';}
-    function letraB(){document.getElementById('altA').style.backgroundColor='White';document.getElementById('altB').style.backgroundColor= 'Blue';document.getElementById('altC').style.backgroundColor='White';document.getElementById('altD').style.backgroundColor='White';document.getElementById('altE').style.backgroundColor='White';}
-    function letraC(){document.getElementById('altA').style.backgroundColor='White';document.getElementById('altB').style.backgroundColor='White';document.getElementById('altC').style.backgroundColor= 'Blue';document.getElementById('altD').style.backgroundColor='White';document.getElementById('altE').style.backgroundColor='White';}
-    function letraD(){document.getElementById('altA').style.backgroundColor='White';document.getElementById('altB').style.backgroundColor='White';document.getElementById('altC').style.backgroundColor='White';document.getElementById('altD').style.backgroundColor='Blue';document.getElementById('altE').style.backgroundColor='White';}
-    function letraE(){document.getElementById('altA').style.backgroundColor='White';document.getElementById('altB').style.backgroundColor='White';document.getElementById('altC').style.backgroundColor='White';document.getElementById('altD').style.backgroundColor='White';document.getElementById('altE').style.backgroundColor='Blue';}
-    </script>
+  </div>
+
+  <div id="q1">
+    <p style="text-align: left">Questão <script>document.write(2);</script></p>
+    <div style='text-align: center'><script>document.write(titulo[1]);</script></div>
+    <div><script>document.write(texto[1]);</script></div>
+    <div style='font-size: 14px; text-align: right'><script>document.write(fonte[1]);</script></div>
+    <div><script>document.write(outrotexto[1]);</script></div>
+    <div style='font-size: 14px; text-align: right'><script>document.write(outrafonte[1]);</script></div>
+    <div><script>document.write(enunciado[1])</script></div>
+    <table>
+     <tr>
+     <td> <input type="button" onclick="letraA1()" value="A" id="altA1"></td>
+     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraA[1])</script></span></td>
+     </tr>
+     <tr>
+     <td> <input type="button" onclick="letraB1()" value="B" id="altB1"></td>
+     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraB[1])</script></span></td>
+     </tr>
+     <tr>
+     <td><input type="button" onclick="letraC1()" value="C" id="altC1"></td>
+     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraC[1])</script></span></td>
+    </tr>
+    <tr>
+      <td><input type="button" onclick="letraD1()" value="D" id="altD1"></td>
+      <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraD[1])</script></span></td>
+    </tr>
+    <tr>
+      <td><input type="button" onclick="letraE1()" value="E" id="altE1"></td>
+      <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraE[1])</script></span></td>
+    </tr>
+    </table>
+  </div>
+  <div id="q2">
+    <p style="text-align: left">Questão <script>document.write(3);</script></p>
+    <div style='text-align: center'><script>document.write(titulo[2]);</script></div>
+    <div><script>document.write(texto[2]);</script></div>
+    <div style='font-size: 14px; text-align: right'><script>document.write(fonte[2]);</script></div>
+    <div><script>document.write(outrotexto[2]);</script></div>
+    <div style='font-size: 14px; text-align: right'><script>document.write(outrafonte[2]);</script></div>
+    <div><script>document.write(enunciado[2])</script></div>
+    <table>
+     <tr>
+     <td> <input type="button" onclick="letraA2()" value="A" id="altA2"></td>
+     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraA[2])</script></span></td>
+     </tr>
+     <tr>
+     <td> <input type="button" onclick="letraB2()" value="B" id="altB2"></td>
+     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraB[2])</script></span></td>
+     </tr>
+     <tr>
+     <td><input type="button" onclick="letraC2()" value="C" id="altC2"></td>
+     <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraC[2])</script></span></td>
+    </tr>
+    <tr>
+      <td><input type="button" onclick="letraD2()" value="D" id="altD2"></td>
+      <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraD[2])</script></span></td>
+    </tr>
+    <tr>
+      <td><input type="button" onclick="letraE2()" value="E" id="altE2"></td>
+      <td> <span style="font-size: 16px; align-items: bottom;"><script>document.write(letraE[2])</script></span></td>
+    </tr>
+    </table>
+  </div>
+
+  <button onclick="verificarquestao">Verificar Questões</button>
+
+
 </body>
 </html>
